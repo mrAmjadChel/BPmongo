@@ -32,6 +32,7 @@ exports.getAllblogs = (req,res) => {
     Blogs.find({}).exec((err,blogs) => {
         res.json(blogs)
     })
+    
 }
 
 //ดึงบทความที่สนใจโดยอ้างอิงตาม slug
